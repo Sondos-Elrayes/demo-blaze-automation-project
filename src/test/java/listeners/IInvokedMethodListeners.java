@@ -15,11 +15,12 @@ public class IInvokedMethodListeners implements IInvokedMethodListener {
 
     }
 
-        public void afterInvocation(IInvokedMethod method, ITestResult testResult, ITestContext context) {
-            if (testResult.getStatus() == ITestResult.FAILURE) {
-                LogsUtils.info("Test Case " + testResult.getName() + " failed with exception: " + testResult.getThrowable());
-                AttachmentsUtils.takeScreenShot(getDriver(), testResult.getName());
-            }
+    public void afterInvocation(IInvokedMethod method, ITestResult testResult, ITestContext context) {
+        if (testResult.getStatus() == ITestResult.FAILURE) {
+            LogsUtils.info("Test Case " + testResult.getName() + " failed with exception: " + testResult.getThrowable());
+            AttachmentsUtils.takeScreenShot(getDriver(), testResult.getName());
+            //AttachmentsUtils.takeFullScreenshot(getDriver(), B);
+        }
 
     }
 }

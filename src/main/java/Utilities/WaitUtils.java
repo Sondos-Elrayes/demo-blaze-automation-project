@@ -37,17 +37,20 @@ public class WaitUtils {
     }
 
 
-    public static void waitForProductToDisappear(String productName,WebDriver driver) {
-        By locator = By.xpath("//tr[@class='success']/td[2][text()='" + productName + "']");
-        generalWait(driver).until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    public static void waitForElementToDisappear(WebDriver driver, By locator) {
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
+    public static void waitAlert(WebDriver driver) {
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.alertIsPresent());
+    }
 
-
-
-
-
-
+    public static void waitForPresenceOfAllElements(WebDriver driver, By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+    }
 
 
 }

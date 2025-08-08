@@ -12,27 +12,28 @@ public class DriverFactory {
 
     public static void setupDriver(String Browser) {
 
-            if (driverThreadLocal.get() == null) {
-                switch (Browser.toLowerCase()) {
-                    case "chrome":
-                        ChromeOptions chromeOptions = new ChromeOptions();
-                        //chromeOptions.addArguments("--headless");
-                        chromeOptions.addArguments("--start-maximized");
-                        driverThreadLocal.set(new ChromeDriver(chromeOptions));
-                        break;
-                    case "firefox":
-                        FirefoxOptions firefoxOptions = new FirefoxOptions();
-                        //firefoxOptions.addArguments("-headless");
-                        firefoxOptions.addArguments("--start-maximized");
-                        driverThreadLocal.set(new FirefoxDriver(firefoxOptions));
-                        break;
-                    default:
-                        throw new IllegalArgumentException("Browser not supported: " + Browser);
+        if (driverThreadLocal.get() == null) {
+            switch (Browser.toLowerCase()) {
+                case "chrome":
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    //chromeOptions.addArguments("--headless");
+                    chromeOptions.addArguments("--start-maximized");
+                    driverThreadLocal.set(new ChromeDriver(chromeOptions));
+                    break;
+                case "firefox":
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    //firefoxOptions.addArguments("-headless");
+                    firefoxOptions.addArguments("--start-maximized");
+                    driverThreadLocal.set(new FirefoxDriver(firefoxOptions));
+                    break;
+                default:
+                    throw new IllegalArgumentException("Browser not supported: " + Browser);
 
-                }
             }
+        }
 
     }
+
     public static WebDriver getDriver() {
         WebDriver driver = driverThreadLocal.get();
         if (driver == null) {
@@ -41,7 +42,7 @@ public class DriverFactory {
         return driver;
     }
 
-    public static void closeDriver() {
+    public static void quitDriver() {
         if (driverThreadLocal.get() != null) {
             getDriver().quit();
             driverThreadLocal.remove();
