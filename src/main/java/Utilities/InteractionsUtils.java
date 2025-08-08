@@ -89,4 +89,13 @@ public class InteractionsUtils {
     }
 
 
+    public static boolean isElementDisplayed(WebDriver driver, By locator) {
+        try {
+            WebElement element = driver.findElement(locator);
+            return element.isDisplayed();
+        } catch (Exception e) {
+            LogsUtils.error("Element not found or not displayed: " + e);
+            return false;
+        }
+    }
 }

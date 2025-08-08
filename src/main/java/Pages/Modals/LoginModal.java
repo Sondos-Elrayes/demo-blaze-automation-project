@@ -2,8 +2,10 @@ package Pages.Modals;
 
 import Pages.HomePage;
 import Utilities.InteractionsUtils;
+import Utilities.LogsUtils;
 import Utilities.WaitUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class LoginModal {
@@ -28,7 +30,20 @@ public class LoginModal {
 
     // Login methods
     public LoginModal clickLoginNavigationButton() {
-        InteractionsUtils.clickOnElement(driver, loginLink);
+        if (InteractionsUtils.isElementDisplayed(driver, loginLink)) {
+            // Login link is available, click it
+            InteractionsUtils.clickOnElement(driver, loginLink);
+
+        } else if (InteractionsUtils.isElementDisplayed(driver, logoutLink)) {
+            // User is logged in, log out first
+            InteractionsUtils.clickOnElement(driver, logoutLink);
+            WaitUtils.waitForElementToBeVisible(driver, loginLink);
+            InteractionsUtils.clickOnElement(driver, loginLink);
+
+        } else {
+            LogsUtils.error("Neither Login nor Logout link is visible.");
+            throw new NoSuchElementException("Login and Logout links are missing.");
+        }
         return this;
     }
 
@@ -62,11 +77,11 @@ public class LoginModal {
 
     }
 
-
-    // Logout methods
-    public LoginModal clickLogoutLink() {
-        InteractionsUtils.clickOnElement(driver, logoutLink);
-        return this;
+    public String getLoginMessageAlert() {
+        WaitUtils.waitAlert(driver);
+        String alertText = driver.switchTo().alert().getText();
+        driver.switchTo().alert().accept();
+        return alertText;
     }
 
 

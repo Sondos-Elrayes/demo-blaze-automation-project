@@ -1,8 +1,10 @@
 package Pages.Modals;
 
 import Utilities.InteractionsUtils;
+import Utilities.LogsUtils;
 import Utilities.WaitUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class SignUpModal {
@@ -10,6 +12,7 @@ public class SignUpModal {
     private final By signUpUsername = By.id("sign-username");
     private final By signUpPassword = By.id("sign-password");
     private final By signUpButton = By.xpath("//button[text()='Sign up']");
+    private final By logoutLink = By.id("logout2");
     private final WebDriver driver;
 
     public SignUpModal(WebDriver driver) {
@@ -18,7 +21,18 @@ public class SignUpModal {
 
     //sign up methods
     public SignUpModal clickSignUpNavigationButton() {
-        InteractionsUtils.clickOnElement(driver, signUpLink);
+        if (InteractionsUtils.isElementDisplayed(driver, signUpLink)) {
+            InteractionsUtils.clickOnElement(driver, signUpLink);
+
+        } else if (InteractionsUtils.isElementDisplayed(driver, logoutLink)) {
+            InteractionsUtils.clickOnElement(driver, logoutLink);
+            WaitUtils.waitForElementToBeVisible(driver, signUpLink);
+            InteractionsUtils.clickOnElement(driver, signUpLink);
+
+        } else {
+            LogsUtils.error("Neither Sign Up nor Logout link is visible.");
+            throw new NoSuchElementException("Sign Up and Logout links are missing.");
+        }
         return this;
     }
 
