@@ -6,6 +6,8 @@ import Utilities.WaitUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Objects;
+
 public class PlaceOrderModal {
     private final By placeOrderModal = By.cssSelector("[id=\"orderModalLabel\"]");
     private final By nameInput = By.id("name");
@@ -15,6 +17,7 @@ public class PlaceOrderModal {
     private final By monthInput = By.id("month");
     private final By yearInput = By.id("year");
     private final By purchaseButton = By.xpath("//button[text()='Purchase']");
+    private final By confirmationDialog = By.cssSelector(".sweet-alert.showSweetAlert.visible");
     private final By closeButton = By.cssSelector("div[id='orderModal'] div[class='modal-footer'] button:nth-child(1)");
     WebDriver driver;
 
@@ -52,5 +55,84 @@ public class PlaceOrderModal {
         return new PurchaseConfirmationModal(driver);
     }
 
+    public boolean assertAlertForEmptyNameField() {
+        try {
+            WaitUtils.waitForElementToBeVisible(driver, purchaseButton);
+            InteractionsUtils.clickOnElement(driver, purchaseButton);
+            WaitUtils.waitAlert(driver);
+            String alertText = driver.switchTo().alert().getText();
+            driver.switchTo().alert().accept();
+            if (alertText.equals("Please fill out Name and Credit Card fields.")) {
+                LogsUtils.info("Alert for empty fields is displayed: " + alertText);
+                return true;
+            } else {
+                LogsUtils.error("Unexpected alert message: " + alertText);
+                return false;
+            }
+        } catch (Exception e) {
+            LogsUtils.error("Error checking alert for empty fields: " + e.getMessage());
+            return false;
+        }
+    }
 
+
+    public boolean assertAlertForEmptyYearField() {
+        try {
+            WaitUtils.waitForElementToBeVisible(driver, purchaseButton);
+            InteractionsUtils.clickOnElement(driver, purchaseButton);
+
+            //Check if confirmation modal is visible
+            if (Objects.requireNonNull(WaitUtils.waitForElementToBeVisible(driver, confirmationDialog)).isDisplayed()) {
+                LogsUtils.error("Purchase confirmation modal appeared — should have shown alert for invalid credit card.");
+                return false;
+            }
+
+            //Check for alert
+            if (InteractionsUtils.isAlertPresent(driver)) {
+                String alertText = driver.switchTo().alert().getText();
+                driver.switchTo().alert().accept();
+                if ("Please fill out Year field.".equals(alertText)) {
+                    LogsUtils.info("Correct alert displayed: " + alertText);
+                    return true;
+                } else {
+                    LogsUtils.error("Unexpected alert message: " + alertText);
+                    return false;
+                }
+            }
+        } catch (Exception e) {
+            LogsUtils.error("Error checking alert for invalid credit card: " + e.getMessage());
+        }
+        return false;
+
+    }
+
+    public boolean assertAlertForInvalidCreditCardNumber() {
+        try {
+            WaitUtils.waitForElementToBeVisible(driver, purchaseButton);
+            InteractionsUtils.clickOnElement(driver, purchaseButton);
+
+            //Check if confirmation modal is visible
+            if (Objects.requireNonNull(WaitUtils.waitForElementToBeVisible(driver, confirmationDialog)).isDisplayed()) {
+                LogsUtils.error("Purchase confirmation modal appeared — should have shown alert for invalid credit card.");
+                return false;
+            }
+
+            //Check for alert
+            if (InteractionsUtils.isAlertPresent(driver)) {
+                String alertText = driver.switchTo().alert().getText();
+                driver.switchTo().alert().accept();
+                if ("Please fill out Credit Card field with valid data.".equals(alertText)) {
+                    LogsUtils.info("Correct alert displayed: " + alertText);
+                    return true;
+                } else {
+                    LogsUtils.error("Unexpected alert message: " + alertText);
+                    return false;
+                }
+            }
+        } catch (Exception e) {
+            LogsUtils.error("Error checking alert for invalid credit card: " + e.getMessage());
+        }
+        return false;
+
+    }
 }

@@ -1,5 +1,6 @@
 package Tests;
 
+import Pages.HomePage;
 import Pages.Modals.LoginModal;
 import Pages.Modals.PurchaseConfirmationModal;
 import Utilities.DataUtils;
@@ -13,6 +14,8 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 import static DriverFactory.DriverFactory.*;
 
@@ -43,7 +46,7 @@ public class PlaceOrderTests {
 
 
     @Test
-    public void verifyCartTotalPriceMatchesSumProductPricesAddedToCart() {
+    public void verifyPlaceOrderWithValidData() {
         int productsToAdd = 3;
         new LoginModal(getDriver())
                 .clickLoginNavigationButton()
@@ -60,6 +63,29 @@ public class PlaceOrderTests {
                 .clickPurchaseButton()
                 .waitUntilPurchaseConfirmationOpen();
         Assert.assertTrue(new PurchaseConfirmationModal(getDriver()).verifyOrderId());
+    }
+
+    @Test
+    public void verifyPlaceOrderWithEmptyName() {
+        Map<String, String> data = new HashMap<>(DataUtils.getJsonDataAsMap("info.json"));
+        data.put("name", "");
+
+        new HomePage(getDriver())
+                .chooseCategory(LaptopsCategory)
+                .addProductsToCart(2)
+                .goToCart()
+                .clickPlaceOrderButton()
+                .fillingPlaceOrderModal(
+                        data.get("name"),
+                        data.get("country"),
+                        data.get("city"),
+                        data.get("creditCard"),
+                        data.get("month"),
+                        data.get("year")
+                )
+                .clickPurchaseButton();
+
+
     }
 
     @AfterTest

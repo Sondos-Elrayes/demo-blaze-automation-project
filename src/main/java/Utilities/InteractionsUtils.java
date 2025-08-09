@@ -104,4 +104,15 @@ public class InteractionsUtils {
         List<String> notWorkingImages = new ArrayList<>();
         return notWorkingImages;
     }
+
+    public static boolean isAlertPresent(WebDriver driver) {
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(5))
+                    .until(ExpectedConditions.alertIsPresent());
+            return true;
+        } catch (Exception e) {
+            LogsUtils.error("No alert present: " + e.getMessage());
+            return false;
+        }
+    }
 }

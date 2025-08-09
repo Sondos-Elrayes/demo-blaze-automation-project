@@ -1,12 +1,13 @@
 package Utilities;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Map;
 import java.util.Properties;
 
 public class DataUtils {
@@ -63,5 +64,15 @@ public class DataUtils {
             throw new RuntimeException("Failed to load properties file: " + fileName, e);
         }
         return properties.getProperty(key);
+    }
+
+    //reading JSON data as a Map to override the need for multiple getJsonData calls
+    public static Map<String, String> getJsonDataAsMap(String filePath) {
+        try (Reader reader = new FileReader(filePath)) {
+            return new Gson().fromJson(reader, new TypeToken<Map<String, String>>() {
+            }.getType());
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to read JSON file: " + filePath, e);
+        }
     }
 }
