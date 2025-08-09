@@ -1,5 +1,6 @@
 package Tests;
 
+import DriverFactory.BaseTest;
 import Pages.Modals.LoginModal;
 import Pages.Modals.SignUpModal;
 import Utilities.DataUtils;
@@ -8,36 +9,20 @@ import io.qameta.allure.*;
 import listeners.IInvokedMethodListeners;
 import listeners.ITestMethodListeners;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
-
-import static DriverFactory.DriverFactory.*;
 
 @Epic("Authentication Module")
 @Feature("Sign Up & Login")
 @Listeners({IInvokedMethodListeners.class, ITestMethodListeners.class})
-public class AuthTests {
+public class AuthTests extends BaseTest {
 
     private final String VALID_PASSWORD = DataUtils.getJsonData("authValidData", "password");
     private final String VALID_USERNAME = DataUtils.getJsonData("authValidData", "username");
     private final String INVALID_PASSWORD = DataUtils.getJsonData("authInvalidData", "password");
     private final String INVALID_USERNAME = DataUtils.getJsonData("authInvalidData", "username");
 
-    @BeforeMethod
-    public void setup() {
-        setupDriver(DataUtils.getPropertyData("environments", "BROWSER"));
-        LogsUtils.info("chrome driver is set up successfully.");
-        getDriver().get(DataUtils.getPropertyData("environments", "LAUNCH_URL"));
-        LogsUtils.info("Application URL is launched successfully.");
-        getDriver().manage().timeouts()
-                .implicitlyWait(Duration.ofSeconds(5));
-
-    }
-
+    @Severity(SeverityLevel.CRITICAL)
     @Story("Sign up with valid data")
     @Description("Verify valid sign up with new username and password display alert message 'Sign up successful.'")
     @Test(priority = 1)
@@ -123,10 +108,7 @@ public class AuthTests {
 
     }
 
-    @AfterMethod
-    public void tearDown() {
-        quitDriver();
-    }
+
 }
 
 

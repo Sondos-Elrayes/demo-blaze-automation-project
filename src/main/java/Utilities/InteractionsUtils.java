@@ -98,4 +98,10 @@ public class InteractionsUtils {
             return false;
         }
     }
+
+    //TODO
+    public static List<String> checkIfLinksAreWorking(List<WebElement> webElements, String baseUrl, String photo) {
+        List<String> notWorkingImages = new ArrayList<>();
+        return notWorkingImages;
+    }
 }

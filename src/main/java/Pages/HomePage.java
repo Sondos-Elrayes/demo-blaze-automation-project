@@ -93,23 +93,35 @@ public class HomePage {
         return this;
     }
 
-//    public HomePage verifyAllProductImageAreWorking() {
-//        LogsUtils.info("Checking all product images on the homepage.");
-//        waitForElementToBeVisible(getDriver(), productImages);
-//        List<String> invalidImageLink = InteractionsUtils
-//                .checkIfLinksAreWorking(allProductImages(), BASE_URL, "photo");
-//
-//        if (!invalidImageLink.isEmpty()) {
-//            LogsUtils.error("Some product images are not working:");
-//            for (String invalid : invalidImageLink) {
-//                LogsUtils.error("Invalid: " + invalid);
-//            }
-//        } else {
-//            LogsUtils.info("All product images are working correctly.");
-//        }
-//        return this;
-//    }
+    public boolean checkAllProductLinks() {
+        WaitUtils.waitForPresenceOfAllElements(driver, waitForProductLinks);
+        List<String> hrefs = allProductLinks()
+                .stream()
+                .map(e -> e.getAttribute("href"))
+                .toList();
 
+        return InteractionsUtils.checkIfLinksAreWorking(hrefs, BASE_URL).isEmpty();
+    }
+
+    // TODO: Implement test case to verify product images
+    public HomePage verifyAllProductImageAreWorking() {
+        LogsUtils.info("Checking all product images on the homepage.");
+        waitForElementToBeVisible(getDriver(), productImages);
+        List<String> invalidImageLink = InteractionsUtils
+                .checkIfLinksAreWorking(allProductImages(), BASE_URL, "photo");
+
+        if (!invalidImageLink.isEmpty()) {
+            LogsUtils.error("Some product images are not working:");
+            for (String invalid : invalidImageLink) {
+                LogsUtils.error("Invalid: " + invalid);
+            }
+        } else {
+            LogsUtils.info("All product images are working correctly.");
+        }
+        return this;
+    }
+
+    // TODO: Implement test case to choose specific product
     public ProductPage ChooseProduct(String product) {
         waitForElementToBeVisible(getDriver(), productLink);
         String xpath = "//a[text()='" + product + "']";
@@ -120,12 +132,15 @@ public class HomePage {
     }
 
     public HomePage addProductsToCart(int numberOfProducts) {
-        LogsUtils.info("Adding " + numberOfProducts + " products to cart.");
 
+        expectedTitlesForSelectedProducts.clear();
+        collectedPricesForSelectedProducts.clear();
+
+        LogsUtils.info("Adding " + numberOfProducts + " products to cart.");
         for (int i = 0; i < numberOfProducts; i++) {
             waitForElementToBeVisible(driver, productLinksLocator);
 
-            // Re-fetch the elements each time (page reloads after navigate().back())
+            // Refetch the elements each time (page reloads after navigate().back())
             List<WebElement> products = driver.findElements(productLinksLocator);
 
             if (i >= products.size()) {
@@ -146,12 +161,19 @@ public class HomePage {
             productPage.waitForAddToCartAlertAndAccept();
 
             driver.navigate().back(); // back
-            driver.navigate().back(); // back to homepage
+            driver.navigate().back();// back to homepage
+            WaitUtils.waitForPresenceOfAllElements(driver, productLinksLocator);
         }
 
         LogsUtils.info("All " + numberOfProducts + " products added to cart successfully.");
         return this;
     }
+
+    private int getCartItemCount() {
+        String countText = driver.findElement(By.id("cartur")).getText().replaceAll("\\D+", "");
+        return countText.isEmpty() ? 0 : Integer.parseInt(countText);
+    }
+
 
     public boolean VerifyCartPageURL(String expectedURL) {
         try {

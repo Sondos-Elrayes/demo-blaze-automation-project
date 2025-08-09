@@ -55,7 +55,7 @@ public class FinishOrderTests {
                 .verifyAllProductLinksAreWorking()
                 .addProductsToCart(productsToAdd)
                 .goToCart()
-                .placeOrderButton()
+                .clickPlaceOrderButton()
                 .fillingPlaceOrderModal(name, country, city, card, month, year)
                 .clickPurchaseButton()
                 .waitUntilPurchaseConfirmationOpen()
