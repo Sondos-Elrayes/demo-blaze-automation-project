@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Full Test Suite" verbose="1" parallel="false">
+    <listeners>
+        <listener class-name="listeners.IInvokedMethodListeners"/>
+        <listener class-name="listeners.ITestMethodListeners"/>
+    </listeners>
+    <test name="All Tests">
+        <classes>
+            <class name="Tests.AuthTests"/>
+            <class name="Tests.HomeTests"/>
+            <class name="Tests.CartTests"/>
+            <class name="Tests.PlaceOrderTests"/>
+            <class name="Tests.FinishOrderTests"/>
+
+        </classes>
+    </test>
+
+</suite>

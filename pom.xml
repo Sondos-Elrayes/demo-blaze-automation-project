@@ -17,26 +17,12 @@
         <allure.version>2.25.0</allure.version>
         <allureMaven>2.12.0</allureMaven>
         <surefire>3.2.5</surefire>
+        <aspectj.version>1.9.24</aspectj.version>
         <suite.regression>Test Runner/RegressionSuite.xml</suite.regression>
-
     </properties>
     <build>
         <directory>test-outputs/target</directory>
         <plugins>
-            <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>${allureMaven}</version>
-                <executions>
-                    <execution>
-                        <phase>test</phase>
-
-                    </execution>
-                </executions>
-                <configuration>
-                    <reportVersion>${allure.version}</reportVersion>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -46,14 +32,17 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>
-                            ${suite.regression}
-                        </suiteXmlFile>
+                        <suiteXmlFile>${suite.regression}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
-
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.24</version>
+                    </dependency>
+                </dependencies>
             </plugin>
-
         </plugins>
     </build>
     <dependencies>

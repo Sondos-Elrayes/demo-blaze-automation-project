@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E2E Test Suite" verbose="1" parallel="false">
+    <listeners>
+        <listener class-name="listeners.IInvokedMethodListeners"/>
+        <listener class-name="listeners.ITestMethodListeners"/>
+    </listeners>
+    <test name="EndToEnd Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+
+        </classes>
+    </test>
+</suite>

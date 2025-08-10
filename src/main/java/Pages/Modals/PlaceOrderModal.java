@@ -16,7 +16,7 @@ public class PlaceOrderModal {
     private final By creditCardInput = By.id("card");
     private final By monthInput = By.id("month");
     private final By yearInput = By.id("year");
-    private final By purchaseButton = By.xpath("//button[text()='Purchase']");
+    private final By purchaseButton = By.cssSelector("[onclick=\"purchaseOrder()\"]");
     private final By confirmationDialog = By.cssSelector(".sweet-alert.showSweetAlert.visible");
     private final By closeButton = By.cssSelector("div[id='orderModal'] div[class='modal-footer'] button:nth-child(1)");
     WebDriver driver;
@@ -62,7 +62,7 @@ public class PlaceOrderModal {
             WaitUtils.waitAlert(driver);
             String alertText = driver.switchTo().alert().getText();
             driver.switchTo().alert().accept();
-            if (alertText.equals("Please fill out Name and Credit Card fields.")) {
+            if (alertText.equals("Please fill out Name and Creditcard.")) {
                 LogsUtils.info("Alert for empty fields is displayed: " + alertText);
                 return true;
             } else {

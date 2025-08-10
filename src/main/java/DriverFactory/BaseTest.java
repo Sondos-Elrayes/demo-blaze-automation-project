@@ -29,7 +29,6 @@ public abstract class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        //new CartPage(getDriver()).clearCart();
         quitDriver();
     }
 }

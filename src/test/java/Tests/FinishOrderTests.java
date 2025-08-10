@@ -1,28 +1,26 @@
 package Tests;
 
+import DriverFactory.BaseTest;
+import Pages.CartPage;
+import Pages.HomePage;
 import Pages.Modals.LoginModal;
 import Pages.Modals.PurchaseConfirmationModal;
 import Utilities.DataUtils;
-import Utilities.LogsUtils;
+import io.qameta.allure.*;
 import listeners.IInvokedMethodListeners;
 import listeners.ITestMethodListeners;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
-import java.time.Duration;
-
-import static DriverFactory.DriverFactory.*;
-
+@Epic("Checkout Module")
+@Feature("Order Completion")
 @Listeners({IInvokedMethodListeners.class, ITestMethodListeners.class})
-public class FinishOrderTests {
-    private final String PASSWORD = DataUtils.getJsonData("loginData", "password");
-    private final String USERNAME = DataUtils.getJsonData("loginData", "username");
-    private final String PhonesCategory = DataUtils.getJsonDataFromList("categoryData", "categories[0]");
+public class FinishOrderTests extends BaseTest {
+    private final String PASSWORD = DataUtils.getJsonData("authValidData", "password");
+    private final String USERNAME = DataUtils.getJsonData("authValidData", "username");
     private final String LaptopsCategory = DataUtils.getJsonDataFromList("categoryData", "categories[1]");
-    private final String MonitorsCategory = DataUtils.getJsonDataFromList("categoryData", "categories[2]");
     private final String name = DataUtils.getJsonData("info", "name");
     private final String country = DataUtils.getJsonData("info", "country");
     private final String city = DataUtils.getJsonData("info", "city");
@@ -30,20 +28,11 @@ public class FinishOrderTests {
     private final String month = DataUtils.getJsonData("info", "month");
     private final String year = DataUtils.getJsonData("info", "year");
 
-
-    @BeforeTest
-    public void setup() {
-        setupDriver(DataUtils.getPropertyData("environments", "BROWSER"));
-        LogsUtils.info("chrome driver is set up successfully.");
-        getDriver().get(DataUtils.getPropertyData("environments", "LAUNCH_URL"));
-        LogsUtils.info("Application URL is launched successfully.");
-        getDriver().manage().timeouts()
-                .implicitlyWait(Duration.ofSeconds(5));
-    }
-
-
-    @Test
-    public void verifyCartTotalPriceMatchesSumProductPricesAddedToCart() {
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("User completes purchase successfully and sees correct confirmation")
+    @Description("Verify that after placing an order, the confirmation modal shows correct thank you message and order amount.")
+    @Test(priority = 1)
+    public void verifyOrderFinishedSuccessfully() {
         int productsToAdd = 3;
         new LoginModal(getDriver())
                 .clickLoginNavigationButton()
@@ -58,15 +47,56 @@ public class FinishOrderTests {
                 .clickPlaceOrderButton()
                 .fillingPlaceOrderModal(name, country, city, card, month, year)
                 .clickPurchaseButton()
+                .waitUntilPurchaseConfirmationOpen();
+
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(new PurchaseConfirmationModal(getDriver()).assertThankYouMessage(),
+                "Order was not placed successfully, thank you message is not displayed as expected.");
+        softAssert.assertTrue(new PurchaseConfirmationModal(getDriver()).verifyOrderAmount(),
+                "Order amount is not as expected.");
+        softAssert.assertAll();
+    }
+
+
+    @Severity(SeverityLevel.MINOR)
+    @Story("User is redirected to home page after completing purchase")
+    @Description("Verify that user is redirected to home page after completing an order.")
+    @Test(priority = 2)
+    public void verifyWhenOrderFinishedRedirectToHomePage() {
+        int productsToAdd = 3;
+        new HomePage(getDriver())
+                .addProductsToCart(productsToAdd)
+                .goToCart()
+                .clickPlaceOrderButton()
+                .fillingPlaceOrderModal(name, country, city, card, month, year)
+                .clickPurchaseButton()
                 .waitUntilPurchaseConfirmationOpen()
                 .clickOk();
 
-        Assert.assertTrue(new PurchaseConfirmationModal(getDriver()).assertThankYouMessage(),
-                "Order was not placed successfully, thank you message is not displayed as expected.");
+        Assert.assertTrue(new PurchaseConfirmationModal(getDriver()).verifyRedirectToHomePage(),
+                "User was not redirected to the home page after order completion.");
     }
 
-    @AfterTest
-    public void tearDown() {
-        quitDriver();
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Cart is emptied after order is completed")
+    @Description("Verify that the cart is empty after order completion.")
+    @Test(priority = 3)
+
+    public void verifyWhenOrderFinishedCartIsEmpty() {
+        int productsToAdd = 3;
+        new HomePage(getDriver())
+                .addProductsToCart(productsToAdd)
+                .goToCart()
+                .clickPlaceOrderButton()
+                .fillingPlaceOrderModal(name, country, city, card, month, year)
+                .clickPurchaseButton()
+                .waitUntilPurchaseConfirmationOpen()
+                .clickOk()
+                .goToCart();
+
+        Assert.assertTrue(new CartPage(getDriver()).cartItemDisappearedAfterPurchasing(),
+                "Cart is not empty after order completion, items still present in the cart.");
     }
+
+
 }

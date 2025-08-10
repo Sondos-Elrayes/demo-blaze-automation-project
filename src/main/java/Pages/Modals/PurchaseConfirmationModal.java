@@ -15,8 +15,8 @@ import java.util.regex.Pattern;
 public class PurchaseConfirmationModal {
     static String dialogMessage;
     private final By dialog = By.cssSelector(".sweet-alert.showSweetAlert.visible");
-    private final By title = By.cssSelector(".sweet-alert h2");         // "Thank you for your purchase!"
-    private final By body = By.cssSelector(".sweet-alert p");          // contains Id, Amount, Card, Name, Date
+    private final By title = By.cssSelector(".sweet-alert h2");
+    private final By body = By.cssSelector(".sweet-alert p");
     private final By okBtn = By.cssSelector(".sweet-alert button.confirm");
     WebDriver driver;
 
@@ -103,10 +103,11 @@ public class PurchaseConfirmationModal {
 
     // Test case: order is done and referring user to the home page
     //verifyRedirectToHomePageAfterPurchaseDone
-    public void clickOk() {
+    public HomePage clickOk() {
         driver.findElement(okBtn).click();
         WaitUtils.waitForElementToDisappear(driver, dialog);
         LogsUtils.info("Clicked OK button in Purchase Confirmation.");
+        return new HomePage(driver);
 
 
     }

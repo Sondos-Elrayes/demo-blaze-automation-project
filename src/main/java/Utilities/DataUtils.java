@@ -1,12 +1,9 @@
 package Utilities;
 
 import com.google.gson.*;
-import com.google.gson.reflect.TypeToken;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.Properties;
 
@@ -67,12 +64,24 @@ public class DataUtils {
     }
 
     //reading JSON data as a Map to override the need for multiple getJsonData calls
-    public static Map<String, String> getJsonDataAsMap(String filePath) {
-        try (Reader reader = new FileReader(filePath)) {
-            return new Gson().fromJson(reader, new TypeToken<Map<String, String>>() {
-            }.getType());
+    // DataUtils.java
+    public static Map<String, String> getJsonDataAsMap(String resourcePath) {
+        // example resourcePath: "TestData/info.json"
+        try (InputStream is = Thread.currentThread()
+                .getContextClassLoader()
+                .getResourceAsStream(resourcePath)) {
+
+            if (is == null) {
+                throw new FileNotFoundException("Resource not found on classpath: " + resourcePath);
+            }
+
+            try (Reader reader = new InputStreamReader(is, StandardCharsets.UTF_8)) {
+                return new Gson().fromJson(reader, new com.google.gson.reflect.TypeToken<Map<String, String>>() {
+                }.getType());
+            }
         } catch (IOException e) {
-            throw new RuntimeException("Failed to read JSON file: " + filePath, e);
+            throw new RuntimeException("Failed to read JSON resource: " + resourcePath, e);
         }
     }
+
 }

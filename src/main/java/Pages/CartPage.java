@@ -176,7 +176,7 @@ public class CartPage {
     }
 
     public boolean cartItemDisappearedAfterPurchasing() {
-        return assertNumberOfProductsInCart(0);
+        return !InteractionsUtils.isElementDisplayed(driver, cartRowsForElements);
     }
 
 }
