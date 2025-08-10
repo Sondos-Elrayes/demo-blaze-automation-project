@@ -36,7 +36,7 @@ public class PlaceOrderTests extends BaseTest {
     @Description("Verify that a user can successfully place an order with valid details.")
     @Test(priority = 1)
     public void verifyPlaceOrderWithValidData() {
-        int productsToAdd = 3;
+        int productsToAdd = 2;
         new LoginModal(getDriver())
                 .clickLoginNavigationButton()
                 .enterUsernameForLogin(USERNAME)
@@ -63,7 +63,7 @@ public class PlaceOrderTests extends BaseTest {
         data.put("name", "");
 
         new HomePage(getDriver())
-                .addProductsToCart(3)
+                .addProductsToCart(2)
                 .goToCart()
                 .clickPlaceOrderButton()
                 .fillingPlaceOrderModal(
@@ -89,7 +89,7 @@ public class PlaceOrderTests extends BaseTest {
         data.put("year", "");
 
         new HomePage(getDriver())
-                .addProductsToCart(2)
+                .addProductsToCart(1)
                 .goToCart()
                 .clickPlaceOrderButton()
                 .fillingPlaceOrderModal(

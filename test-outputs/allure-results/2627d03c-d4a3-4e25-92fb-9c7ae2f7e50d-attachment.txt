@@ -1,0 +1,4 @@
+[INFO] 10-08-2025 13:29:01 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:02 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:02 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case validSignUpTest started
+[INFO] 10-08-2025 13:29:04 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case validSignUpTest failed with exception: java.lang.AssertionError: Sign up failed, alert message is not as expected. expected [Sign up successful.] but found [This user already exist.]

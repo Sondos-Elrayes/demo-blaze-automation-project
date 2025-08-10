@@ -1,0 +1,337 @@
+[INFO] 10-08-2025 13:56:08 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:56:09 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:56:09 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case validSignUpTest started
+[INFO] 10-08-2025 13:56:11 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case validSignUpTest failed with exception: java.lang.AssertionError: Sign up failed, alert message is not as expected. expected [Sign up successful.] but found [This user already exist.]
+[INFO] 10-08-2025 13:56:15 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:56:16 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:56:16 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case validLoginTest started
+[INFO] 10-08-2025 13:56:23 [main] [Tests.AuthTests.validLoginTest(AuthTests.java:56)] - Login successful, welcome message is displayed as expected.
+[INFO] 10-08-2025 13:56:23 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case validLoginTest Passed
+[INFO] 10-08-2025 13:56:26 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:56:27 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:56:27 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case invalidSignUpTest started
+[INFO] 10-08-2025 13:56:33 [main] [Tests.AuthTests.invalidSignUpTest(AuthTests.java:74)] - Sign up failed, alert message is displayed as expected with This user already exist message.
+[INFO] 10-08-2025 13:56:33 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case invalidSignUpTest Passed
+[INFO] 10-08-2025 13:56:36 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:56:37 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:56:37 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case signUpWithEmptyPasswordTest started
+[INFO] 10-08-2025 13:56:38 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case signUpWithEmptyPasswordTest failed with exception: java.lang.AssertionError: Alert message is not as expected. expected [Please fill out Password.] but found [Please fill out Username and Password.]
+[INFO] 10-08-2025 13:56:41 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:56:42 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:56:42 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case invalidLoginTest started
+[INFO] 10-08-2025 13:56:49 [main] [Tests.AuthTests.invalidLoginTest(AuthTests.java:90)] - Login failed, alert message is displayed as expected with wrong password message.
+[INFO] 10-08-2025 13:56:49 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case invalidLoginTest Passed
+[INFO] 10-08-2025 13:56:51 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:56:52 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:56:52 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cartProductCountTest started
+[INFO] 10-08-2025 13:56:58 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:57:00 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:57:00 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:57:00 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:57:01 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:57:01 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:57:01 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:57:02 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:57:02 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:57:03 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:57:03 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:57:03 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:57:03 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:57:04 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:57:04 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:57:04 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:57:05 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:57:05 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:57:05 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cartProductCountTest Passed
+[INFO] 10-08-2025 13:57:08 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:57:08 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:57:08 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cartProductCountTest started
+[INFO] 10-08-2025 13:57:14 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:57:14 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:57:14 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:57:15 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:57:16 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:57:16 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:57:16 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:57:16 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:57:17 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:57:17 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:57:17 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:57:18 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:57:18 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:57:19 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=11 [Status: 200]
+[INFO] 10-08-2025 13:57:19 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=12 [Status: 200]
+[INFO] 10-08-2025 13:57:19 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=13 [Status: 200]
+[INFO] 10-08-2025 13:57:20 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=15 [Status: 200]
+[INFO] 10-08-2025 13:57:20 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cartProductCountTest Passed
+[INFO] 10-08-2025 13:57:22 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:57:23 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:57:23 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cartProductCountTest started
+[INFO] 10-08-2025 13:57:28 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:57:28 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:57:29 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:57:29 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:57:29 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:57:30 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:57:30 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:57:30 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:57:31 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:57:31 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:57:31 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:57:31 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=10 [Status: 200]
+[INFO] 10-08-2025 13:57:32 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=14 [Status: 200]
+[INFO] 10-08-2025 13:57:32 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cartProductCountTest Passed
+[INFO] 10-08-2025 13:57:33 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:57:34 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:57:34 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cliCkOnCartButton started
+[INFO] 10-08-2025 13:57:40 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:57:40 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cliCkOnCartButton Passed
+[INFO] 10-08-2025 13:57:42 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:57:43 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:57:43 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cartProductCountTest started
+[INFO] 10-08-2025 13:57:44 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:57:45 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:57:45 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:57:45 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:57:46 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:57:46 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:57:46 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:57:46 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:57:47 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:57:47 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:57:47 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:57:47 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 3 products to cart.
+[INFO] 10-08-2025 13:57:48 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Sony vaio i5 opened for adding to cart.
+[INFO] 10-08-2025 13:57:48 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:57:49 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:57:49 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 Sony vaio i7 opened for adding to cart.
+[INFO] 10-08-2025 13:57:49 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:57:50 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:57:50 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 2 MacBook air opened for adding to cart.
+[INFO] 10-08-2025 13:57:51 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:57:51 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:57:51 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 3 products added to cart successfully.
+[INFO] 10-08-2025 13:57:52 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:57:53 [main] [Pages.CartPage.assertNumberOfProductsInCart(CartPage.java:85)] - Expected products: 3, Actual in cart: 3
+[INFO] 10-08-2025 13:57:53 [main] [Pages.CartPage.assertNumberOfProductsInCart(CartPage.java:88)] - Cart product count matches expected.
+[INFO] 10-08-2025 13:57:53 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cartProductCountTest Passed
+[INFO] 10-08-2025 13:57:55 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:57:56 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:57:56 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyCartContentsTest started
+[INFO] 10-08-2025 13:58:02 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:58:02 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:58:02 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:58:03 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:58:03 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:58:03 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:58:04 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:58:04 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:58:04 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:58:05 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:58:05 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:58:05 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 3 products to cart.
+[INFO] 10-08-2025 13:58:05 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Sony vaio i5 opened for adding to cart.
+[INFO] 10-08-2025 13:58:06 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:06 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:07 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 Sony vaio i7 opened for adding to cart.
+[INFO] 10-08-2025 13:58:08 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:08 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:09 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 2 MacBook air opened for adding to cart.
+[INFO] 10-08-2025 13:58:09 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:10 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:10 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 3 products added to cart successfully.
+[INFO] 10-08-2025 13:58:10 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:58:11 [main] [Pages.CartPage.getProductTitlesInCart(CartPage.java:39)] - Cart contains products: [Sony vaio i7, MacBook air, Sony vaio i5]
+[INFO] 10-08-2025 13:58:11 [main] [Pages.CartPage.getProductPricesInCart(CartPage.java:50)] - Cart contains prices: [790, 700, 790]
+[INFO] 10-08-2025 13:58:11 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case verifyCartContentsTest Passed
+[INFO] 10-08-2025 13:58:14 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:58:15 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:58:15 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyCartTotalPriceMatchesSumProductPricesAddedToCart started
+[INFO] 10-08-2025 13:58:20 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:58:21 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:58:21 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:58:21 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:58:21 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:58:22 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:58:22 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:58:22 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:58:23 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:58:23 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:58:23 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:58:23 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 3 products to cart.
+[INFO] 10-08-2025 13:58:24 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Sony vaio i5 opened for adding to cart.
+[INFO] 10-08-2025 13:58:24 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:25 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:26 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 Sony vaio i7 opened for adding to cart.
+[INFO] 10-08-2025 13:58:27 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:27 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:27 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 2 MacBook air opened for adding to cart.
+[INFO] 10-08-2025 13:58:28 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:28 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:28 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 3 products added to cart successfully.
+[INFO] 10-08-2025 13:58:29 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:58:30 [main] [Pages.CartPage.isCartTotalCorrect(CartPage.java:119)] - Expected total: 2280 | Actual: 2280
+[INFO] 10-08-2025 13:58:30 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case verifyCartTotalPriceMatchesSumProductPricesAddedToCart Passed
+[INFO] 10-08-2025 13:58:33 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:58:33 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:58:33 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyPlaceOrderModalDisplayedWithItemsInCart started
+[INFO] 10-08-2025 13:58:39 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:58:39 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:58:39 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:58:40 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:58:40 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:58:40 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:58:41 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:58:41 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:58:41 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:58:41 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:58:41 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:58:41 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 2 products to cart.
+[INFO] 10-08-2025 13:58:42 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Apple monitor 24 opened for adding to cart.
+[INFO] 10-08-2025 13:58:43 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:43 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:44 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 ASUS Full HD opened for adding to cart.
+[INFO] 10-08-2025 13:58:45 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:58:45 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:58:45 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 2 products added to cart successfully.
+[INFO] 10-08-2025 13:58:46 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:58:46 [main] [Pages.CartPage.clickPlaceOrderButton(CartPage.java:131)] - Clicked on Place Order button.
+[INFO] 10-08-2025 13:58:47 [main] [Pages.CartPage.assertPlaceOrderModalDisplayedWithItemsInCart(CartPage.java:155)] - Place Order modal is displayed after clicking Place Order button.
+[INFO] 10-08-2025 13:58:47 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case verifyPlaceOrderModalDisplayedWithItemsInCart Passed
+[INFO] 10-08-2025 13:58:49 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:58:50 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:58:50 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyPlaceOrderModalNotDisplayedForEmptyCart started
+[INFO] 10-08-2025 13:58:55 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:58:56 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:58:56 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:58:56 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:58:57 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:58:57 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:58:57 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:58:58 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:58:58 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:58:58 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:58:58 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:58:58 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 2 products to cart.
+[INFO] 10-08-2025 13:58:59 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Apple monitor 24 opened for adding to cart.
+[INFO] 10-08-2025 13:58:59 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:59:00 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:59:01 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 ASUS Full HD opened for adding to cart.
+[INFO] 10-08-2025 13:59:01 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:59:02 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:59:02 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 2 products added to cart successfully.
+[INFO] 10-08-2025 13:59:03 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:59:15 [main] [Pages.CartPage.clickPlaceOrderButton(CartPage.java:131)] - Clicked on Place Order button.
+[ERROR] 10-08-2025 13:59:16 [main] [Pages.CartPage.assertPlaceOrderModalNotDisplayedForEmptyCart(CartPage.java:168)] - Place Order modal should not be displayed for empty cart.
+[INFO] 10-08-2025 13:59:16 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case verifyPlaceOrderModalNotDisplayedForEmptyCart failed with exception: java.lang.AssertionError: Place Order modal should not be displayed for an empty cart. expected [true] but found [false]
+[INFO] 10-08-2025 13:59:19 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:59:20 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:59:20 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyPlaceOrderWithValidData started
+[INFO] 10-08-2025 13:59:28 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:59:28 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:59:28 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:59:29 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:59:29 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:59:29 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:59:30 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:59:30 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:59:31 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:59:31 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:59:31 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:59:31 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 2 products to cart.
+[INFO] 10-08-2025 13:59:32 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Sony vaio i5 opened for adding to cart.
+[INFO] 10-08-2025 13:59:32 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:59:33 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added.
+[INFO] 10-08-2025 13:59:33 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 Sony vaio i7 opened for adding to cart.
+[INFO] 10-08-2025 13:59:34 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:59:34 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added.
+[INFO] 10-08-2025 13:59:35 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 2 products added to cart successfully.
+[INFO] 10-08-2025 13:59:35 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:59:35 [main] [Pages.CartPage.clickPlaceOrderButton(CartPage.java:131)] - Clicked on Place Order button.
+[INFO] 10-08-2025 13:59:37 [main] [Pages.Modals.PlaceOrderModal.fillingPlaceOrderModal(PlaceOrderModal.java:38)] - Filled Place Order Modal Name: Hazel Elrayes, Country: Egypt, City: Mansoura, Credit Card: 42424242424242, Month: 12, Year: 2027
+[INFO] 10-08-2025 13:59:37 [main] [Pages.Modals.PlaceOrderModal.clickPurchaseButton(PlaceOrderModal.java:54)] - Clicked Purchase button in Place Order Modal.
+[INFO] 10-08-2025 13:59:37 [main] [Pages.Modals.PurchaseConfirmationModal.waitUntilPurchaseConfirmationOpen(PurchaseConfirmationModal.java:31)] - Purchase Confirmation dialog opened with message: Thank you for your purchase!
+[INFO] 10-08-2025 13:59:37 [main] [Pages.Modals.PurchaseConfirmationModal.extractOrderId(PurchaseConfirmationModal.java:91)] - Extracted Order ID: 1034007
+[INFO] 10-08-2025 13:59:37 [main] [Pages.Modals.PurchaseConfirmationModal.extractOrderId(PurchaseConfirmationModal.java:91)] - Extracted Order ID: 1034007
+[INFO] 10-08-2025 13:59:37 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case verifyPlaceOrderWithValidData Passed
+[INFO] 10-08-2025 13:59:40 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:59:41 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:59:41 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyPlaceOrderWithEmptyName started
+[INFO] 10-08-2025 13:59:46 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 2 products to cart.
+[INFO] 10-08-2025 13:59:47 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Samsung galaxy s6 opened for adding to cart.
+[INFO] 10-08-2025 13:59:47 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:59:48 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:59:48 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 Nokia lumia 1520 opened for adding to cart.
+[INFO] 10-08-2025 13:59:48 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 13:59:49 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 13:59:49 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 2 products added to cart successfully.
+[INFO] 10-08-2025 13:59:50 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 13:59:50 [main] [Pages.CartPage.clickPlaceOrderButton(CartPage.java:131)] - Clicked on Place Order button.
+[INFO] 10-08-2025 13:59:51 [main] [Pages.Modals.PlaceOrderModal.fillingPlaceOrderModal(PlaceOrderModal.java:38)] - Filled Place Order Modal Name: , Country: Egypt, City: Mansoura, Credit Card: 42424242424242, Month: 12, Year: 2027
+[INFO] 10-08-2025 13:59:51 [main] [Pages.Modals.PlaceOrderModal.clickPurchaseButton(PlaceOrderModal.java:54)] - Clicked Purchase button in Place Order Modal.
+[INFO] 10-08-2025 13:59:52 [main] [Pages.Modals.PlaceOrderModal.assertAlertForEmptyNameField(PlaceOrderModal.java:66)] - Alert for empty fields is displayed: Please fill out Name and Creditcard.
+[INFO] 10-08-2025 13:59:52 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case verifyPlaceOrderWithEmptyName Passed
+[INFO] 10-08-2025 13:59:54 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:59:55 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:59:55 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyAlertForEmptyYearField started
+[INFO] 10-08-2025 14:00:00 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 1 products to cart.
+[INFO] 10-08-2025 14:00:01 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Samsung galaxy s6 opened for adding to cart.
+[INFO] 10-08-2025 14:00:01 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 14:00:02 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 14:00:02 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 1 products added to cart successfully.
+[INFO] 10-08-2025 14:00:03 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 14:00:03 [main] [Pages.CartPage.clickPlaceOrderButton(CartPage.java:131)] - Clicked on Place Order button.
+[INFO] 10-08-2025 14:00:04 [main] [Pages.Modals.PlaceOrderModal.fillingPlaceOrderModal(PlaceOrderModal.java:38)] - Filled Place Order Modal Name: Hazel Elrayes, Country: Egypt, City: Mansoura, Credit Card: 42424242424242, Month: 12, Year: 
+[INFO] 10-08-2025 14:00:04 [main] [Pages.Modals.PlaceOrderModal.clickPurchaseButton(PlaceOrderModal.java:54)] - Clicked Purchase button in Place Order Modal.
+[ERROR] 10-08-2025 14:00:05 [main] [Pages.Modals.PlaceOrderModal.assertAlertForEmptyYearField(PlaceOrderModal.java:86)] - Purchase confirmation modal appeared — should have shown alert for invalid credit card.
+[INFO] 10-08-2025 14:00:05 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case verifyAlertForEmptyYearField failed with exception: java.lang.AssertionError: Alert for empty year field is not displayed ,Purchase confirmed. expected [true] but found [false]
+[INFO] 10-08-2025 14:00:08 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 14:00:09 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 14:00:09 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyAlertForInvalidCreditCardNumber started
+[INFO] 10-08-2025 14:00:14 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 2 products to cart.
+[INFO] 10-08-2025 14:00:15 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Samsung galaxy s6 opened for adding to cart.
+[INFO] 10-08-2025 14:00:15 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 14:00:16 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 14:00:16 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 Nokia lumia 1520 opened for adding to cart.
+[INFO] 10-08-2025 14:00:17 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 14:00:17 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added
+[INFO] 10-08-2025 14:00:17 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 2 products added to cart successfully.
+[INFO] 10-08-2025 14:00:18 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 14:00:18 [main] [Pages.CartPage.clickPlaceOrderButton(CartPage.java:131)] - Clicked on Place Order button.
+[INFO] 10-08-2025 14:00:19 [main] [Pages.Modals.PlaceOrderModal.fillingPlaceOrderModal(PlaceOrderModal.java:38)] - Filled Place Order Modal Name: Hazel Elrayes, Country: Egypt, City: Mansoura, Credit Card: @@@@@@@@@, Month: 12, Year: 2027
+[INFO] 10-08-2025 14:00:20 [main] [Pages.Modals.PlaceOrderModal.clickPurchaseButton(PlaceOrderModal.java:54)] - Clicked Purchase button in Place Order Modal.
+[ERROR] 10-08-2025 14:00:20 [main] [Pages.Modals.PlaceOrderModal.assertAlertForInvalidCreditCardNumber(PlaceOrderModal.java:116)] - Purchase confirmation modal appeared — should have shown alert for invalid credit card.
+[INFO] 10-08-2025 14:00:20 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case verifyAlertForInvalidCreditCardNumber failed with exception: java.lang.AssertionError: Alert for invalid credit card number is not displayed ,Purchase confirmed with wrong Credit card number. expected [true] but found [false]
+[INFO] 10-08-2025 14:00:23 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 14:00:24 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 14:00:24 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case verifyOrderFinishedSuccessfully started
+[INFO] 10-08-2025 14:00:32 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 14:00:32 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 14:00:33 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 14:00:33 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 14:00:33 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 14:00:34 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 14:00:34 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 14:00:35 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 14:00:35 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 14:00:36 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 14:00:36 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 14:00:36 [main] [Pages.HomePage.addProductsToCart(HomePage.java:139)] - Adding 3 products to cart.
+[INFO] 10-08-2025 14:00:36 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 0 Sony vaio i5 opened for adding to cart.
+[INFO] 10-08-2025 14:00:37 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 14:00:37 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added.
+[INFO] 10-08-2025 14:00:38 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 1 Sony vaio i7 opened for adding to cart.
+[INFO] 10-08-2025 14:00:38 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 14:00:39 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added.
+[INFO] 10-08-2025 14:00:39 [main] [Pages.HomePage.addProductsToCart(HomePage.java:154)] - Product 2 MacBook air opened for adding to cart.
+[INFO] 10-08-2025 14:00:40 [main] [Pages.ProductPage.addToCart(ProductPage.java:34)] - Clicked 'Add to cart' button.
+[INFO] 10-08-2025 14:00:40 [main] [Pages.ProductPage.waitForAddToCartAlertAndAccept(ProductPage.java:41)] - Alert appeared: Product added.
+[INFO] 10-08-2025 14:00:40 [main] [Pages.HomePage.addProductsToCart(HomePage.java:168)] - All 3 products added to cart successfully.
+[INFO] 10-08-2025 14:00:41 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.
+[INFO] 10-08-2025 14:00:41 [main] [Pages.CartPage.clickPlaceOrderButton(CartPage.java:131)] - Clicked on Place Order button.
+[INFO] 10-08-2025 14:00:43 [main] [Pages.Modals.PlaceOrderModal.fillingPlaceOrderModal(PlaceOrderModal.java:38)] - Filled Place Order Modal Name: Hazel Elrayes, Country: Egypt, City: Mansoura, Credit Card: 42424242424242, Month: 12, Year: 2027
+[INFO] 10-08-2025 14:00:43 [main] [Pages.Modals.PlaceOrderModal.clickPurchaseButton(PlaceOrderModal.java:54)] - Clicked Purchase button in Place Order Modal.
+[INFO] 10-08-2025 14:00:43 [main] [Pages.Modals.PurchaseConfirmationModal.waitUntilPurchaseConfirmationOpen(PurchaseConfirmationModal.java:31)] - Purchase Confirmation dialog opened with message: Thank you for your purchase!
+[INFO] 10-08-2025 14:00:43 [main] [Pages.Modals.PurchaseConfirmationModal.assertThankYouMessage(PurchaseConfirmationModal.java:45)] - Purchase Confirmation dialog title is correct: Thank you for your purchase!
+[INFO] 10-08-2025 14:00:43 [main] [Pages.Modals.PurchaseConfirmationModal.getAmountUsd(PurchaseConfirmationModal.java:65)] - Extracted Amount from confirmation: 2280
+[INFO] 10-08-2025 14:00:43 [main] [Pages.Modals.PurchaseConfirmationModal.verifyOrderAmount(PurchaseConfirmationModal.java:77)] - Expected total: 2280 | Actual: 2280

@@ -1,0 +1,87 @@
+[INFO] 10-08-2025 13:29:01 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:02 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:02 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case validSignUpTest started
+[INFO] 10-08-2025 13:29:04 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case validSignUpTest failed with exception: java.lang.AssertionError: Sign up failed, alert message is not as expected. expected [Sign up successful.] but found [This user already exist.]
+[INFO] 10-08-2025 13:29:07 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:07 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:07 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case validLoginTest started
+[INFO] 10-08-2025 13:29:15 [main] [Tests.AuthTests.validLoginTest(AuthTests.java:56)] - Login successful, welcome message is displayed as expected.
+[INFO] 10-08-2025 13:29:15 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case validLoginTest Passed
+[INFO] 10-08-2025 13:29:17 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:18 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:18 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case invalidSignUpTest started
+[INFO] 10-08-2025 13:29:24 [main] [Tests.AuthTests.invalidSignUpTest(AuthTests.java:74)] - Sign up failed, alert message is displayed as expected with This user already exist message.
+[INFO] 10-08-2025 13:29:24 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case invalidSignUpTest Passed
+[INFO] 10-08-2025 13:29:26 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:27 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:27 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case signUpWithEmptyPasswordTest started
+[INFO] 10-08-2025 13:29:28 [main] [listeners.IInvokedMethodListeners.afterInvocation(IInvokedMethodListeners.java:33)] - Test Case signUpWithEmptyPasswordTest failed with exception: java.lang.AssertionError: Alert message is not as expected. expected [Please fill out Password.] but found [Please fill out Username and Password.]
+[INFO] 10-08-2025 13:29:30 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:31 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:31 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case invalidLoginTest started
+[INFO] 10-08-2025 13:29:37 [main] [Tests.AuthTests.invalidLoginTest(AuthTests.java:90)] - Login failed, alert message is displayed as expected with wrong password message.
+[INFO] 10-08-2025 13:29:37 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case invalidLoginTest Passed
+[INFO] 10-08-2025 13:29:39 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:40 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:40 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cartProductCountTest started
+[INFO] 10-08-2025 13:29:41 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:29:42 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:29:43 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:29:43 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:29:43 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:29:43 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:29:44 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:29:44 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:29:44 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:29:45 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:29:45 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:29:45 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:29:45 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:29:46 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:29:46 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:29:46 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:29:47 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:29:47 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:29:47 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cartProductCountTest Passed
+[INFO] 10-08-2025 13:29:49 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:29:50 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:29:50 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cartProductCountTest started
+[INFO] 10-08-2025 13:29:55 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:29:55 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:29:55 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:29:56 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:29:56 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:29:56 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:29:57 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:29:57 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:29:57 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:29:58 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:29:58 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:29:58 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:29:58 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:29:58 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=11 [Status: 200]
+[INFO] 10-08-2025 13:29:59 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=12 [Status: 200]
+[INFO] 10-08-2025 13:29:59 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=13 [Status: 200]
+[INFO] 10-08-2025 13:30:00 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=15 [Status: 200]
+[INFO] 10-08-2025 13:30:00 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cartProductCountTest Passed
+[INFO] 10-08-2025 13:30:01 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:30:03 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:30:03 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cartProductCountTest started
+[INFO] 10-08-2025 13:30:08 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:75)] - Checking all product links on the homepage.
+[INFO] 10-08-2025 13:30:08 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=1 [Status: 200]
+[INFO] 10-08-2025 13:30:08 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=2 [Status: 200]
+[INFO] 10-08-2025 13:30:09 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=3 [Status: 200]
+[INFO] 10-08-2025 13:30:09 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=4 [Status: 200]
+[INFO] 10-08-2025 13:30:09 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=5 [Status: 200]
+[INFO] 10-08-2025 13:30:10 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=6 [Status: 200]
+[INFO] 10-08-2025 13:30:10 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=7 [Status: 200]
+[INFO] 10-08-2025 13:30:10 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=8 [Status: 200]
+[INFO] 10-08-2025 13:30:10 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=9 [Status: 200]
+[INFO] 10-08-2025 13:30:10 [main] [Pages.HomePage.verifyAllProductLinksAreWorking(HomePage.java:91)] - All product links are working correctly.
+[INFO] 10-08-2025 13:30:11 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=10 [Status: 200]
+[INFO] 10-08-2025 13:30:11 [main] [Utilities.InteractionsUtils.checkIfLinksAreWorking(InteractionsUtils.java:77)] - Working: https://www.demoblaze.com/prod.html?idp_=14 [Status: 200]
+[INFO] 10-08-2025 13:30:11 [main] [listeners.ITestMethodListeners.onTestSuccess(ITestMethodListeners.java:15)] - Test Case cartProductCountTest Passed
+[INFO] 10-08-2025 13:30:13 [main] [DriverFactory.BaseTest.setup(BaseTest.java:26)] - chrome driver is set up successfully.
+[INFO] 10-08-2025 13:30:14 [main] [DriverFactory.BaseTest.setup(BaseTest.java:28)] - Application URL is launched successfully.
+[INFO] 10-08-2025 13:30:14 [main] [listeners.ITestMethodListeners.onTestStart(ITestMethodListeners.java:11)] - Test Case cliCkOnCartButton started
+[INFO] 10-08-2025 13:30:19 [main] [Pages.HomePage.goToCart(HomePage.java:189)] - Navigated to Cart page.

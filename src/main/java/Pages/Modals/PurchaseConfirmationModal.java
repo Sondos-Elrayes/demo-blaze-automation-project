@@ -88,7 +88,9 @@ public class PurchaseConfirmationModal {
     public String extractOrderId(String text) {
         Matcher m = Pattern.compile("Id:\\s*(\\d+)").matcher(text);
         if (m.find()) {
+            LogsUtils.info("Extracted Order ID: " + m.group(1));
             return m.group(1);
+
         }
         throw new IllegalArgumentException("Order ID not found in text: " + text);
     }
@@ -96,16 +98,18 @@ public class PurchaseConfirmationModal {
     public boolean verifyOrderId() {
         if (extractOrderId(getDetails()) == null || extractOrderId(getDetails()).isEmpty()) {
             throw new IllegalArgumentException("Text cannot be null or empty");
-        } else
+        } else {
             return true;
+        }
+
     }
 
 
     // Test case: order is done and referring user to the home page
     //verifyRedirectToHomePageAfterPurchaseDone
     public HomePage clickOk() {
-        driver.findElement(okBtn).click();
-        WaitUtils.waitForElementToDisappear(driver, dialog);
+        WaitUtils.waitForElementToBeVisible(driver, okBtn);
+        InteractionsUtils.clickOnElement(driver, okBtn);
         LogsUtils.info("Clicked OK button in Purchase Confirmation.");
         return new HomePage(driver);
 
@@ -116,6 +120,7 @@ public class PurchaseConfirmationModal {
         try {
             WaitUtils.waitForElementToDisappear(driver, dialog);
             String currentUrl = driver.getCurrentUrl();
+            assert currentUrl != null;
             if (currentUrl.equals(DataUtils.getPropertyData("environments", "LAUNCH_URL"))) {
                 LogsUtils.info("Redirected to Home Page after purchase.");
                 return true;

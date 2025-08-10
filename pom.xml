@@ -18,7 +18,7 @@
         <allureMaven>2.12.0</allureMaven>
         <surefire>3.2.5</surefire>
         <aspectj.version>1.9.24</aspectj.version>
-        <suite.regression>Test Runner/RegressionSuite.xml</suite.regression>
+        <suite.fullTest>Test Runner/fullTest.xml</suite.fullTest>
     </properties>
     <build>
         <directory>test-outputs/target</directory>
@@ -28,12 +28,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire}</version>
                 <configuration>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${suite.regression}</suiteXmlFile>
+                        <suiteXmlFile>${suite.fullTest}</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <allure.results.directory>test-outputs/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                    <includes/>
+
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -93,6 +95,11 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>2.29.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-commandline</artifactId>
+            <version>2.34.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>

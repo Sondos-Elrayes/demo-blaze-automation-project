@@ -43,7 +43,7 @@ public class AuthTests extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     @Story("Login with valid credentials")
     @Description("Verify valid login with correct username and password")
-    @Test(priority = 2, alwaysRun = true)
+    @Test(priority = 2)
     public void validLoginTest() {
         new LoginModal(getDriver())
                 .clickLoginNavigationButton()
